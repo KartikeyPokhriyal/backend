@@ -15,7 +15,7 @@ building:
 testing:
   stage: test
   script:
-    - gradle test
+    - ./gradlew test
 
 pushing-to-qa:
   stage: push-to-qa
