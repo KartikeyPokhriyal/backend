@@ -1,0 +1,6 @@
+{
+  "name": "Red Bus Backend",
+  "description": "A barebones Java app using Gradle, which can easily be deployed to Heroku.",
+  "image": "heroku/java",
+  "addons": [ "heroku-postgresql" ]
+}
