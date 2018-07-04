@@ -1,11 +1,17 @@
 image: java:8
 
 stages:
+  - dummy
   - build
   - test
   - push-to-qa
   - push-to-staging
   - push-to-prod
+
+dummyy:
+  stage: dummy
+  script:
+    - echo '$asdf'
 
 building:
   stage: build
