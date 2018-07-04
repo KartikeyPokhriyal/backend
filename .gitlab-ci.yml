@@ -26,20 +26,21 @@ testing:
 pushing-to-qa:
   stage: push-to-qa
   script:
-    - git remote add heroku https://heroku:700cab94-8592-4ada-9bed-baf71e30ba85@git.heroku.com/backend-qa-redbus.git
+    - git remote add heroku https://heroku:$herokuTokenVinay@git.heroku.com/backend-qa-redbus.git
     - git push -f -q heroku master
   when: manual
 
 pushing-to-staging:
   stage: push-to-staging
   script:
-    - git remote add heroku https://heroku:700cab94-8592-4ada-9bed-baf71e30ba85@git.heroku.com/backend-qa-redbus.git
+    - git remote add heroku https://heroku:$herokuTokenVinay@git.heroku.com/backend-staging-redbus.git
     - git push -f -q heroku master
   when: manual
 
 pushing-to-prod:
   stage: push-to-prod
   script:
-    - git remote add heroku https://heroku:700cab94-8592-4ada-9bed-baf71e30ba85@git.heroku.com/backend-qa-redbus.git
+    - git remote add heroku https://heroku:$herokuTokenVinay@git.heroku.com/backend-prod-redbus.git
     - git push -f -q heroku master
   when: manual
+
