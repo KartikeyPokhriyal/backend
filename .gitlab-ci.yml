@@ -11,7 +11,7 @@ stages:
 dummyy:
   stage: dummy
   script:
-    - echo '$asdf'
+    - echo $asdf
 
 building:
   stage: build
